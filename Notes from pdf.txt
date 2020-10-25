@@ -1,3 +1,0 @@
-Notes from pdf:
-A logistic function or logistic curve is a common S-shaped curve (sigmoid curve) with equation - https://en.wikipedia.org/wiki/Logistic_function
-The logistic function is exponential for early times, but the growth slows as it reaches some limit. - https://xaktly.com/LogisticFunctions.html

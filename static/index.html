@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+    <style>
+        .predict_power {
+            width: 60vw;
+            height: 100px;
+            
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            
+            margin: auto;
+        }
+        p {
+            margin: 0;
+        }
+        button {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="predict_power">
+        <h5>Predict power out for wind speed:</h5>
+        <p>Wind Speed:</p>
+        <div class="input-group mb-2">
+            
+            <input type="number" id="speed" class="form-control">
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary" id = "calculate_power">Calculate Power</button>
+        </div>
+        <div class="mb-2">
+            <p>Power Output:</p>
+            <input type="number" id="power_output" >
+          
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script>
+        $("#calculate_power").click(function(e) {
+            e.preventDefault();
+            $.getJSON("/powerproduction", function(data) {
+                $('#power_output').val(data.value);
+            })
+        });
+    </script>
+</body>
+</html>

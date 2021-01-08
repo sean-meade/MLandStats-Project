@@ -2,7 +2,7 @@
 
 This repository contains my submission for Machine Learning and Statistics, a module as part of the H.Dip in data analytics with GMIT (2020).
 
-The file *trainingModel.ipynb* contains an explaination of the data set found in *powerproduction.csv*, attempts at training two models to predict the power output for a given wind speed, and an alysis of their accuracy.
+The file *trainingModel.ipynb* contains an explaination of the data set found in *powerproduction.csv*, attempts at training two models to predict the power output for a given wind speed, and an analysis of their accuracy.
 
 The *Dockerfile* file is used to implement a Dockker container utilizing *.dockerignore* to ignore unnecessary files for implementation.
 

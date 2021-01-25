@@ -16,6 +16,9 @@ The *imgs* folder contains images used for explaination in *trainingModel.ipynb*
 
 *ProjectPDF.pdf* contains the instructions for the project given by lecture Ian McLoughlin.
 
+Below is an example of the app in the browser:
+![image of plan my run](imgs/app-example.png)
+
 ## Implementing power production prediction app
 ---
 ### Windows
